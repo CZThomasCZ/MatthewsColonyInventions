@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+     <RecipeDef Abstract="True" Name="MCISurgeryBase">
+         <effectWorking>Surgery</effectWorking>
+         <soundWorking>Recipe_Surgery</soundWorking>
+         <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+         <workSkillLearnFactor>16</workSkillLearnFactor>
+     </RecipeDef>
+     
+    <RecipeDef ParentName="MCISurgeryBase">
+        <defName>SurgeryAgeDecrease</defName>
+        <label>Rejuvenate</label>
+        <description>Decresases age of a pawn. [x=(current age/9+1)*3]</description>
+		<workerClass>Recipe_Rejuvenate</workerClass>
+        <jobString>Doing age decrease surgery</jobString>
+        <workAmount>5000</workAmount>
+        <surgerySuccessChanceFactor>1.1</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.03</deathOnFailedSurgeryChance>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>MedicineHerbal</li>
+                <li>MedicineIndustrial</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <researchPrerequisite>MCIRejuvenate</researchPrerequisite>
+  </RecipeDef>
+</Defs>

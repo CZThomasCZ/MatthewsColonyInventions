@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef Name="DeathMemory" Abstract="True">
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>5</stackLimit>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemory">
+    <defName>KnowGuestExecuted</defName>
+    <durationDays>6</durationDays>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+			<li>
+				<label>justified execution</label>
+				<description>A guilty prisoner or guest was executed. It was justified.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+      <li>
+        <label>someone was euthanized</label>
+        <!-- generic humane -->
+        <description>A prisoner or guest was euthanized. It was humane.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>someone was executed</label>
+        <!-- generic brutal -->
+        <description>A prisoner or guest was killed in cold blood. It seemed a bit evil.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>someone organ-harvested</label>
+        <!-- died because of organ harvesting -->
+        <description>A prisoner or guest died because the colony took body parts from him. Whatever, just get over it you weak peasants.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemory">
+    <defName>KnowColonistExecuted</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+			<li>
+				<label>justified execution of colonist</label>
+				<description>A guilty colonist was executed. It was justified.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+      <li>
+        <label>colonist euthanized</label>
+        <!-- generic humane, can't be worse than KnowColonistDied -->
+        <description>A colonist was euthanized. It was humane.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>colonist executed</label>
+        <!-- generic brutal -->
+        <description>A colonist was killed in cold blood. It seemed a bit evil.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>colonist organ-harvested</label>
+        <!-- died because of organ harvesting -->
+        <description>A colonist died because someone took body parts from him. Whoops, better luck next time.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemory">
+    <defName>KnowPrisonerDiedInnocent</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>innocent prisoner died</label>
+        <description>One of our prisoners died. We should be able to take care of our prisoners.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

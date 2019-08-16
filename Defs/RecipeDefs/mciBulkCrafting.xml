@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef>
+        <defName>PsychiteTea10</defName>
+        <label>Brew 10 cups of psychite tea</label>
+        <description>Brews 10 cups of psychite tea.</description>
+        <jobString>Brewing psychite tea.</jobString>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <products>
+            <PsychiteTea>10</PsychiteTea>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychoidLeaves</li>
+            </thingDefs>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <workAmount>3200</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <recipeUsers>
+            <li>ElectricStove</li>
+            <li>FueledStove</li>
+        </recipeUsers>
+		<skillRequirements>
+			<Cooking>7</Cooking>
+		</skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef>
+        <defName>Yayo9</defName>
+        <label>Make 450g of yayo</label>
+        <description>Make 450g (9 sacks) of yayo.</description>
+        <jobString>Making bulk yayo.</jobString>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>72</count>
+            </li>
+        </ingredients>
+        <products>
+            <Yayo>9</Yayo>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychoidLeaves</li>
+            </thingDefs>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <workAmount>2835</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>7</Intellectual>
+		</skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef>
+        <defName>Flake10</defName>
+        <label>Make 500g of flake</label>
+        <description>Make 500g (10 sacks) of flake.</description>
+        <jobString>Making bulk flake.</jobString>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <products>
+            <Flake>10</Flake>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychoidLeaves</li>
+            </thingDefs>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <workAmount>2250</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef>
+        <defName>Flake18</defName>
+        <label>Make 900g of flake</label>
+        <description>Make 900g (18 sacks) of flake.</description>
+        <jobString>Making bulk flake.</jobString>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>72</count>
+            </li>
+        </ingredients>
+        <products>
+            <Flake>18</Flake>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychoidLeaves</li>
+            </thingDefs>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <workAmount>2250</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+    </RecipeDef>
+</Defs>

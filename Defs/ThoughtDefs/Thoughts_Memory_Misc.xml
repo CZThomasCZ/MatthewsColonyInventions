@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+		<defName>KnowPrisonerSold</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>a prisoner was sold</label>
+				<description>This colony sold a prisoner into slavery. That's a heart-warming thought.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+    </ThoughtDef>
+    
+	<ThoughtDef>
+		<defName>KnowGuestOrganHarvested</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>someone's organ harvested</label>
+				<description>The colony took body parts from a guest or prisoner. It's horrible, breaking someone down for parts when they have no choice. On the other side... If they were imprisoned, they surely did something pretty bad.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+    
+    <ThoughtDef>
+        <defName>PrisonerAbandonedToDie</defName>
+        <durationDays>1</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+          <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+          <li>
+            <label>prisoner abandoned to die</label>
+            <description>We left a prisoner behind in such a way that there's almost no way they'll survive. Hooray! Let's throw a party!!</description>
+            <baseMoodEffect>0</baseMoodEffect>
+          </li>
+        </stages>
+    </ThoughtDef>
+  <ThoughtDef>
+    <defName>ColonistBanished</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+		<showBubble>true</showBubble>
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist banished</label>
+        <description>We just banished someone. I'm sure they'll make it.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>ColonistBanishedToDie</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+		<showBubble>true</showBubble>
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist banished and left to die</label>
+        <description>We banished someone in such a way that there's almost no way they'll survive.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+    
+</Defs>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Basic Antibiotics  -->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>BasicAntibiotics</defName>
+    <label>Basic Antibiotics</label>
+    <description>Basic version of antibiotics, has many side effects.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/Antibiotics</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>25</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BasicAntibiotics</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+			<researchPrerequisite>BasicAntibiotics</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Medicine>12</Medicine>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>3</Neutroamine>
+      <MedicineHerbal>3</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.08</min>
+          <max>0.14</max>
+        </overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Advanced Antibiotics -->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>AdvancedAntibiotics</defName>
+    <label>Advanced Antibiotics</label>
+    <description>More refined version of atibiotics, most harmful effect are neutralized.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/Antibiotics</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <WorkToMake>700</WorkToMake>
+      <MarketValue>40</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AdvancedAntibiotics</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+			<researchPrerequisite>BasicAntibiotics</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Medicine>16</Medicine>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+      <MedicineHerbal>4</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.08</min>
+          <max>0.14</max>
+        </overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  <HediffDef>
+    <defName>BasicAntibiotics</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Basic Antibiotics</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.15</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>-0.1</offset>
+            </li>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>-0.08</offset>
+            </li>
+          </capMods>
+          <statOffsets>
+            <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+			<ImmunityGainSpeed>0.06</ImmunityGainSpeed>
+          </statOffsets>
+		</li>
+      </stages>
+  </HediffDef>
+  
+  
+  
+  <HediffDef>
+    <defName>AdvancedAntibiotics</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Advanced Antibiotics</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.1</offset>
+            </li>
+          </capMods>
+          <statOffsets>
+            <WorkSpeedGlobal>-0.06</WorkSpeedGlobal>
+			<ImmunityGainSpeed>0.12</ImmunityGainSpeed>
+          </statOffsets>
+		</li>
+      </stages>
+  </HediffDef>
+  
+</Defs>

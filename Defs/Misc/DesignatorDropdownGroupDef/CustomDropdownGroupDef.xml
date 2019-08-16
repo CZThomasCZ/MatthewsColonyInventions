@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DesignatorDropdownGroupDef>
+        <defName>LEDLamps</defName>
+    </DesignatorDropdownGroupDef>
+    
+    <DesignatorDropdownGroupDef>
+        <defName>LeadAcidBattery</defName>
+    </DesignatorDropdownGroupDef>
+    
+    <DesignatorDropdownGroupDef>
+        <defName>LithumBattery</defName>
+    </DesignatorDropdownGroupDef>
+    
+    <DesignatorDropdownGroupDef>
+        <defName>SunLamps</defName>
+    </DesignatorDropdownGroupDef>
+    
+</Defs>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Abstract="True" Name="MODBatteryBase" ParentName="BuildingBase">
+    <graphicData>
+      <texPath>Things/Building/Power/Battery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <statBases>
+        <Mass>20</Mass>
+        <Flammability>1.0</Flammability>
+        <Beauty>-15</Beauty>
+    </statBases>
+    <size>(1,2)</size>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc4</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+  </ThingDef>
+  
+  <ThingDef ParentName="MODBatteryBase">
+    <defName>LeadAcidBattery</defName> <!--Standard Lead Acid Battery-->
+    <label>Lead Acid battery</label>
+    <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. Standard Lead Acid battery.</description>
+    <designatorDropdown>LeadAcidBattery</designatorDropdown>
+    <thingClass>Building_Battery</thingClass>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>900</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>LeadAcidBattery</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="MODBatteryBase">
+    <defName>DeepCycleLeadAcidBattery</defName> <!--Deep Cycle Lead Acid Battery-->
+    <label>Deep Cycle Lead Acid battery</label>
+    <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. Deep Cycle Lead Acid battery.</description>
+    <designatorDropdown>LeadAcidBattery</designatorDropdown>
+    <thingClass>Building_Battery</thingClass>
+    <statBases>
+      <MaxHitPoints>110</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>1200</storedEnergyMax>
+        <efficiency>0.58</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>DeepCycleLeadAcidBattery</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="MODBatteryBase">
+    <defName>LithiumBattery</defName> <!--Lithium Battery-->
+    <label>Lithium battery</label>
+    <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. Early lithium battery chemistry.</description>
+    <designatorDropdown>LithumBattery</designatorDropdown>
+    <thingClass>Building_Battery</thingClass>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>1800</storedEnergyMax>
+        <efficiency>0.60</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>LithiumBattery</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="MODBatteryBase">
+    <defName>AdvancedLithiumBattery</defName> <!--Advanced Lithium Battery-->
+    <label>Advanced Lithium battery</label>
+    <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. Modern lithium battery chemistry.</description>
+    <designatorDropdown>LithumBattery</designatorDropdown>
+    <thingClass>Building_Battery</thingClass>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>110</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>2400</storedEnergyMax>
+        <efficiency>0.65</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>AdvancedLithiumBattery</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

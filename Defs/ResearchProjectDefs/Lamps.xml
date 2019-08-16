@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--================ Lamps ================-->
+	<ResearchProjectDef> <!--Basic Lamps-->
+		<defName>BasicLamps</defName>
+		<label>Basic Lamps</label>
+		<description>Further general research into lightning technology might prove useful.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+            <li>BasicElectronics</li>
+		</prerequisites>
+        <tab>MCI</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+    
+	<ResearchProjectDef> <!--Halogen Lamp-->
+		<defName>HalogenLights</defName>
+		<label>Halogen lights</label>
+		<description>Perharps having the heated wire be suspended in a non-reactive gas will benefit us with higher brightness and efficiency.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+            <li>BasicLamps</li>
+		</prerequisites>
+        <tab>MCI</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef> <!--Fluorescent Lamp-->
+		<defName>FluorescentLights</defName>
+		<label>Fluorescent lights</label>
+		<description>What if instead of a wire, the gas itself would glow?</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+            <li>BasicLamps</li>
+		</prerequisites>
+        <tab>MCI</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef> <!--LED Lamps-->
+		<defName>LEDs</defName>
+		<label>Lights Emmiting Diodes</label>
+		<description>LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+            <li>BasicLamps</li>
+		</prerequisites>
+        <tab>MCI</tab>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+    
+    
+	<ResearchProjectDef> <!--LED Heat Dissipation-->
+		<defName>LEDHeat</defName>
+		<label>LED Heat Dissipation</label>
+		<description>The current LEDs heat up too much and their lifespan suffers due to it.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+            <li>BasicLamps</li>
+            <li>LEDs</li>
+		</prerequisites>
+        <tab>MCI</tab>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+    
+	<ResearchProjectDef> <!--Grow Lamps-->
+		<defName>GrowLamps</defName>
+		<label>Grow Lamps</label>
+		<description>Adapting the better light sources to be viable as a hydroponic lights would be useful.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+            <li>BasicLamps</li>
+		</prerequisites>
+        <tab>MCI</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>LEDGlowLamps</defName>
+        <label>LED Glow Lamps</label>
+        <description>Allows colonists to construct infrared glow lamps, which help crops grow.</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>LEDHeat</li>
+            <li>GrowLamps</li>
+        </prerequisites>
+        <tab>MCI</tab>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+</Defs>
