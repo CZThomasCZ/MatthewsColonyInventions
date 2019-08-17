@@ -26,8 +26,8 @@
             <li>BasicLamps</li>
 		</prerequisites>
         <tab>MCI</tab>
-		<researchViewX>0</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef> <!--Fluorescent Lamp-->
@@ -37,10 +37,10 @@
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-            <li>BasicLamps</li>
+            <li>HalogenLights</li>
 		</prerequisites>
         <tab>MCI</tab>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
@@ -94,8 +94,8 @@
 	</ResearchProjectDef>
     
     <ResearchProjectDef>
-        <defName>LEDGlowLamps</defName>
-        <label>LED Glow Lamps</label>
+        <defName>LEDGrowLamps</defName>
+        <label>LED Grow Lamps</label>
         <description>Allows colonists to construct infrared glow lamps, which help crops grow.</description>
         <baseCost>1200</baseCost>
         <techLevel>Industrial</techLevel>

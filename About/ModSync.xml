@@ -2,13 +2,13 @@
 <ModSyncNinjaData>
   <ID>1613eae2-c050-4fb7-9de3-f6f6c0e87903</ID>
   <ModName>Matthew's Colony Inventions</ModName>
-  <Version>8.5c</Version>
+  <Version>8.5d</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>CZThomasCZ</Owner>
     <Project>MatthewsColonyInventions</Project>
     <AboutDir>About</AboutDir>
-    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
