@@ -57,7 +57,7 @@
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>AdvancedAntibiotics</defName>
     <label>Advanced Antibiotics</label>
-    <description>More refined version of atibiotics, most harmful effect are neutralized.</description>
+    <description>More refined version of atibiotics with most harmful effect neutralized.</description>
     <graphicData>
       <texPath>Things/Item/Drugs/Antibiotics</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -81,7 +81,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-			<researchPrerequisite>BasicAntibiotics</researchPrerequisite>
+			<researchPrerequisite>AdvancedAntibiotics</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
       </recipeUsers>
@@ -91,7 +91,7 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-      <Neutroamine>4</Neutroamine>
+      <Neutroamine>6</Neutroamine>
       <MedicineHerbal>4</MedicineHerbal>
     </costList>
     <comps>
@@ -121,6 +121,8 @@
     </comps>
       <stages>
         <li>
+          <label>normalised</label>
+          <vomitMtbDays>0.05</vomitMtbDays>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
@@ -128,15 +130,54 @@
             </li>
             <li>
               <capacity>BloodFiltration</capacity>
-              <offset>-0.1</offset>
+              <offset>-0.08</offset>
+            </li>
+            <li>
+              <capacity>BloodPumping</capacity>
+              <offset>-0.06</offset>
+            </li>
+            <li>
+              <capacity>Metabolism</capacity>
+              <offset>-0.2</offset>
             </li>
             <li>
               <capacity>Manipulation</capacity>
-              <offset>-0.08</offset>
+              <offset>-0.1</offset>
             </li>
           </capMods>
           <statOffsets>
-            <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+            <WorkSpeedGlobal>-0.12</WorkSpeedGlobal>
+			<ImmunityGainSpeed>0.06</ImmunityGainSpeed>
+          </statOffsets>
+		</li>
+        <li>
+          <label>initial</label>
+          <minSeverity>0.9</minSeverity>
+          <vomitMtbDays>0.2</vomitMtbDays>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.15</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>-0.12</offset>
+            </li>
+            <li>
+              <capacity>BloodPumping</capacity>
+              <offset>-0.1</offset>
+            </li>
+            <li>
+              <capacity>Metabolism</capacity>
+              <offset>-0.25</offset>
+            </li>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>-0.1</offset>
+            </li>
+          </capMods>
+          <statOffsets>
+            <WorkSpeedGlobal>-0.12</WorkSpeedGlobal>
 			<ImmunityGainSpeed>0.06</ImmunityGainSpeed>
           </statOffsets>
 		</li>
@@ -159,15 +200,20 @@
     </comps>
       <stages>
         <li>
+          <vomitMtbDays>0.05</vomitMtbDays>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
               <offset>-0.1</offset>
             </li>
+            <li>
+              <capacity>Metabolism</capacity>
+              <offset>-0.07</offset>
+            </li>
           </capMods>
           <statOffsets>
-            <WorkSpeedGlobal>-0.06</WorkSpeedGlobal>
-			<ImmunityGainSpeed>0.12</ImmunityGainSpeed>
+            <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+			<ImmunityGainSpeed>0.10</ImmunityGainSpeed>
           </statOffsets>
 		</li>
       </stages>
