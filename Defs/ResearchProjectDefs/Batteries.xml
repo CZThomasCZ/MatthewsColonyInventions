@@ -8,7 +8,6 @@
 		<baseCost>2000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>Electricity</li>
             <li>BasicEnergyStorage</li>
 		</prerequisites>
         <tab>MCI</tab>
@@ -23,7 +22,6 @@
         <baseCost>2500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Electricity</li>
             <li>LeadAcidBattery</li>
         </prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -39,7 +37,6 @@
         <baseCost>3000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Electricity</li>
             <li>MicroelectronicsBasics</li>
             <li>BasicEnergyStorage</li>
         </prerequisites>
@@ -59,8 +56,6 @@
         <baseCost>3500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Electricity</li>
-            <li>MicroelectronicsBasics</li>
             <li>LithiumBattery</li>
         </prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

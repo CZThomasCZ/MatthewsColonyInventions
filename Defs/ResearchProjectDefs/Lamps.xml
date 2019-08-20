@@ -47,7 +47,7 @@
 	<ResearchProjectDef> <!--LED Lamps-->
 		<defName>LEDs</defName>
 		<label>Lights Emmiting Diodes</label>
-		<description>LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED</description>
+		<description>LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED LED</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -67,7 +67,6 @@
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-            <li>BasicLamps</li>
             <li>LEDs</li>
 		</prerequisites>
         <tab>MCI</tab>
